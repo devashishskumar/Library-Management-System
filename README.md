@@ -1,109 +1,98 @@
-# Library Management System 📚
+Here’s a refined and structured version of your README for the Library Management System 📚:
 
-Its a Project related to Books management for a Libraries 📜.
+📖 Library Management System
 
-**_NOTE : This isn't an Ecommerce Website (There is no Payment System here)_**
+A book management system designed for libraries, facilitating seamless book tracking and user interactions.
 
-FrontEnd is divided into two parts (ADMIN && CLIENT)
+	Note: This is not an e-commerce platform—there is no payment system involved.
 
-ADMIN can do -  
-`1.manage books i.e. add/remove/update/delete books.`
+🏛 System Overview
 
-`2.Check user' details i.e. name/id/borrowed book/etc`
+The application consists of two user roles:
 
-`3.Confirm user's book request && Confirm book Return`
+🔹 ADMIN
+	1.	Manage Books – Add, update, remove, or delete books.
+	2.	User Management – View user details such as name, ID, and borrowed books.
+	3.	Request Handling – Approve or reject book requests and confirm returns.
+	4.	Fine Management – Apply charges for overdue book returns.
 
-`4.Manage Book Charges(Extra fee's for not returing book in time)`
+🔹 CLIENT (User)
+	1.	Browse Books – Search and check book availability.
+	2.	Book Requests – Request to borrow a book.
+	3.	Profile Management – Perform CRUD operations on their dashboard.
 
-CLIENT can do -  
-`1.Basic book surfing's and checking availablities`
+🛠 Technology Stack
 
-`2.Request for a book`
+Frontend:
+	•	React (v18.2.0)
+	•	Bootstrap
 
-`3.Viewing/CRUD Operations on Profile || Dashboard`
+Backend:
+	•	Node.js (v18.16.0)
+	•	Express (v4.18.2)
+	•	MongoDB (v6.0.6)
+	•	Mongosh (v2.0.2)
 
-## Version Specifications :
+🚀 Running the Project Locally
 
-1. NodeJS : v18.16.0
-2. Express : v4.18.2
-3. ReactJS : v18.2.0
-4. Using MongoDB: v6.0.6
-   Using Mongosh: v2.0.2
+1️⃣ Clone the Repository
 
+git clone git@github.com:devashishskumar/Library-Management-System.git
 
+2️⃣ Navigate to Frontend & Backend
 
+cd frontend  
+cd backend  
 
+3️⃣ Install Dependencies
 
-## How to run Project locally :
+Run the following command in both frontend and backend directories:
 
-1. Clone the project
+npm install
 
-```bash
-  git clone git@github.com:devashishskumar/Library-Management-System.git
-```
+	Note: In the backend, create a .env file and copy the values from .env.example.
 
-2. Goto Both 'Frontend' and 'Backend' folder
+4️⃣ Start the Application
 
-```bash
-  cd frontend , cd backend
-```
+Run both frontend and backend servers:
 
-3. Install dependencies on Both Frontend & Backend
+npm run dev
 
-```bash
-  npm install
-```
+	Backend Info: If you encounter any backend-related issues, refer to the /backend/BackendInfo/ folder.
 
-**NOTE : In 'backend' make sure to create a '.env' file and copy paste the values of '.env.example' into newly created '.env' file**
+5️⃣ Set Up the Database
+	•	Ensure your MongoDB server is running (check via Windows Services).
+	•	Open MongoDB Compass (download if necessary).
+	•	Import database collections from the mongoDatabase folder.
 
-4. Start the Frontend and Backend
+# Import respective .JSON files into the database collections
 
-**NOTE : If you have any issues or queries about Backend, refer to /backend/BackendInfo/ folder for details**
-```bash
-  npm run dev
-```
+🐳 Running with Docker
+	1.	Populate the MongoDB database as explained in Step 5 above.
+	2.	Update the .env file with the correct CONNECTION_URL.
+	3.	Navigate to the project root folder:
 
-5. Once you Run Backend(Server), database will be created automatically on Mongodb & You just have to Import the TABLE Data which is Stored in folder 'mongoDatabase'
+cd LIBRARYMANAGEMENTSYSTEM_MERN/
 
-**For Backend :**
+	4.	Run the application with Docker:
 
-`make sure your MondoDB server is running (you can check this via windows Services)`
-
-`open the mongoDB Compass (GUI for mongodb,download if u dont have) and from there you can import the data into respective collections` 
-
-```bash
-Import respective .JSON file into database Collection
-```
-
-## How to run Project using Docker :
-
-- Populate localhost mongodb database (explained in Step5 above).
-- goto .env and make sure to use correct 'CONNECTION_URL'
-- then, goto main folder location i.e. cd LIBRARYMANAGEMENTSYSTEM_MERN/ and use command :
-
-```
 docker-compose up
-```
 
-## Login Credentials
+🔑 Default Login Credentials
 
-Starter Login Credentials : (Make sure to import database collections i.e. userdetails json file into the collections)
+	Ensure you have imported the userdetails JSON file into the database collections.
 
-1. ADMIN (user_type = "admin_user" ):
+Admin Login
+	•	Email: admin@gmail.com
+	•	Password: admin
 
-```
- Email : admin@gmail.com , Password : admin
-```
+User Login
+	•	New users can sign up through the SignUp Page.
 
-2. Normal User Can be created by SignUp Page (user_type = "normal_user" ):
+📌 Key Takeaways
+	1.	Code comments are like love letters to your future self—leave them wisely.
+	2.	If you can’t solve it today, document it. Your future self will thank you!
 
-## Lessons Learned
+💡 Lessons Learned
 
-1. Code Comments are Loveletter's you leave behind for your future self.
-2. If you cant Solve it, address it for your Future Self. He sure can!
-
-## Tech Stack
-
-**Frontend :** React, Bootstrap
-
-**Backend :** Node, Express, MongoDB
+This project was built with React, Bootstrap, Node.js, Express, and MongoDB, focusing on seamless book management and user interactions in a library environment.
