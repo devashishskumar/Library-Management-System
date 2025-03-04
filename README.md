@@ -1,5 +1,3 @@
-Here’s a refined and structured version of your README for the Library Management System 📚:
-
 📖 Library Management System
 
 A book management system designed for libraries, facilitating seamless book tracking and user interactions.
